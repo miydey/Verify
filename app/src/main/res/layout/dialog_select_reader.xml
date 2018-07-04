@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:textSize="30sp"
+    android:textColor="@color/white"
+    android:background="@color/FaceColor"
+    android:padding="5dp"
+    android:gravity="center"
+    android:text="@string/card_config"/>
+   <RadioGroup
+       android:id="@+id/rg_reader"
+       android:padding="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RadioButton
+           android:id="@+id/rb_hs"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="30sp"
+           android:layout_margin="5dp"
+           android:textColor="@color/FaceColor"
+           android:text="华视(单屏默认)"/>
+       <RadioButton
+           android:id="@+id/rb_hd"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="30sp"
+           android:layout_margin="5dp"
+           android:textColor="@color/FaceColor"
+           android:text="华大(双屏专用)"/>
+       <RadioButton
+           android:visibility="gone"
+           android:id="@+id/rb_ar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="30sp"
+           android:layout_margin="5dp"
+           android:textColor="@color/FaceColor"
+           android:text="亚略特(双屏专用)"/>
+   </RadioGroup>
+    <TextView
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:text="切换读卡器之后自动启动程序生效"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginRight="20dp"
+            android:text="阈值："
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/FaceColor"
+            />
+
+        <TextView
+            android:id="@+id/text_threshold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/FaceColor"/>
+        <SeekBar
+            android:layout_height="wrap_content"
+            android:id="@+id/seek_the"
+            android:max="25"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:maxHeight="4dip"
+            android:minHeight="4dip"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/seekbar_thumb"
+            />
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_select">
+
+    </include>
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:id="@+id/layout_custom"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/shape_edit"
+        >
+        <com.chuangber.verify.view.RotateTextView
+            android:id="@+id/rtv_check"
+            android:layout_width="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="0dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="45sp" />
+        <TextView
+            android:id="@+id/title_custom"
+            android:text="@string/customer_info_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="50sp"
+            android:gravity="center"
+            />
+        <View
+            android:layout_below="@id/title_custom"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            >
+        </View>
+        <TextView
+            android:layout_below="@id/title_custom"
+            android:id="@+id/custom_na"
+            android:text="@string/customer_name"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/title_custom"
+            android:id="@+id/custom_name"
+            android:autoLink="all"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/custom_na"
+            android:layout_width="120dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/title_custom"
+            android:id="@+id/custom_ori"
+            android:text="籍贯："
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/custom_name"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/title_custom"
+            android:id="@+id/custom_origin"
+            android:layout_marginTop="20dp"
+            android:autoLink="all"
+            android:layout_marginLeft="40dp"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/custom_ori"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/image_custom_photo"
+            android:layout_below="@id/title_custom"
+            android:layout_width="160dp"
+            android:layout_height="220dp"
+            android:layout_margin="20dp"
+            android:scaleType="fitXY"
+            android:background="@color/alphaGrey"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/custom_se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_gender"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:layout_below="@id/custom_na"/>
+        <TextView
+            android:id="@+id/custom_gender"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_below="@id/custom_name"
+            android:layout_toRightOf="@id/custom_se"/>
+        <!--TextView
+            android:id="@+id/custom_nati"
+            android:text="民族"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/custom_name"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/custom_ori"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/custom_nation"
+            android:text="汉族"
+            android:autoLink="all"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/custom_ori"
+            android:layout_below="@id/custom_origin"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" /-->
+        <TextView
+
+            android:layout_below="@id/custom_se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:text="出生日期："/>
+        <TextView
+            android:id="@+id/custom_birthday"
+
+            android:layout_below="@id/custom_gender"
+            android:layout_marginLeft="40dp"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/custom_na"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/custom_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:text="身份证号："/>
+        <TextView
+            android:id="@+id/custom_id_number"
+            android:layout_below="@id/custom_birthday"
+            android:layout_marginLeft="40dp"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/custom_na"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/disclaimer"
+            android:layout_below="@id/custom_id_number"
+            android:layout_width="800dp"
+            android:textSize="40sp"
+            android:layout_marginTop="30dp"
+            android:text="@string/disclaimer"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_custom_date"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_margin="30dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/text_submit"
+            android:background="@color/FaceColor"
+            android:gravity="center"
+            android:text="完  成"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

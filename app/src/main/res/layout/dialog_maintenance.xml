@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:background="@color/FaceColor"
+        android:text="@string/msg_fix"/>
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@mipmap/a404"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/FaceColor"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="@string/maintenance"/>
+    <TextView
+        android:textColor="@color/FaceColor"
+        android:textSize="25dp"
+        android:gravity="end"
+        android:layout_margin="30dp"
+        android:text="@string/telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
