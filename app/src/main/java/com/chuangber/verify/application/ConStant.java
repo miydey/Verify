@@ -6,6 +6,10 @@ public class ConStant {
 
     public static String sLicence= "MzQ0MTEwbm9kZXZpY2Vjd2F1dGhvcml6Zf3k5+bn5+Ti3+fg5efm5Of/5Obn4Obg5Yjm5uvl5ubrkeXm5uvl5uai6+Xm5uvl5uTm6+Xm5uDm1efr5+vn6+ep4OXl5+fi6/Xn6+fr5+fk++bn5+Y=";
 
+
+
+
+    
     public static final String PACKAGE_NAME = "com.chuangber.verify";
 	public static final String URL_SERVER = "http://118.31.38.73/";
 	//public static final String URL_SERVER = "http://192.168.0.234/";
